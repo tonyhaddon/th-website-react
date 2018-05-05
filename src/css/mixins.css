@@ -1,0 +1,16 @@
+/* _mixins.scss */
+
+@mixin my-padding-mixin($some-number) {
+  padding: $some-number;
+}
+
+@mixin headingAttributes() {
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-weight: 200;
+}
+@mixin lineHeightMult($number: 1, $bi: $base-increment ) {
+	line-height: $bi * $number;
+}

@@ -1,0 +1,16 @@
+.base {
+	height: 22px;
+	margin-right: 11px;
+}
+
+
+.normal {
+	composes: base;
+
+}
+
+.active {
+	composes: base;
+	border: solid 1px blue;
+	
+}

@@ -1,0 +1,14 @@
+@import "../../css/toolkit.css";
+
+
+.logo
+{
+	width: 70px;
+}
+
+.badge
+{
+	lost-column: 1/2;
+	text-align: center;
+	margin: calc($base-increment * 2) 0;
+}

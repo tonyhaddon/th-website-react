@@ -1,0 +1,8 @@
+@import "../../css/toolkit.css";
+
+.app {
+	font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+	font-size: inherit;
+	color: $text-color;
+	font-weight: 200;
+}

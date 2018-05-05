@@ -1,0 +1,36 @@
+@import "../../css/toolkit.css";
+
+
+
+.panelHeader
+{
+	@include headingAttributes();	
+	text-align: center;
+	margin-bottom: calc($base-increment * 8);
+
+}
+
+.subHeader
+{
+	background-color: #F0FAFF;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: calc($base-increment * 3);
+	lost-column: 10/10;
+	padding: calc($base-increment * 2) 0;
+}
+
+.panelPanel
+{
+	background: white;
+	margin-bottom: calc($base-increment * 8);
+	lost-utility: clearfix;
+}
+
+.mainHeadingContainer
+{
+	position:fixed;
+}
+
+

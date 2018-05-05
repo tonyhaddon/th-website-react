@@ -1,0 +1,58 @@
+@import "../../css/toolkit.css";
+
+.containerNormal
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.titleBase
+{
+
+	transition: all 0.3s ease-in;
+	@include headingAttributes();
+	@include lineHeightMult(5);
+	margin-bottom: $base-increment;
+}
+
+.titleNormal
+{
+	composes: titleBase;
+	opacity: 1;
+	
+}
+
+.titleFadeout
+{
+	composes: titleBase;
+	opacity: 0;
+	transform: scale(0.6);
+	transform: translate(0,-10%);
+}
+
+.subtitleBase
+{
+	transition: all 0.3s ease-in;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+	@include lineHeightMult(3);	
+}
+
+.subtitleNormal
+{
+	composes: subtitleBase;
+	opacity: 1;
+}
+
+.subtitleFadeout
+{
+	
+	composes: subtitleBase;
+	opacity: 0;
+	transform: scale(0.6);
+	transform: translate(0,-20%);
+}
+

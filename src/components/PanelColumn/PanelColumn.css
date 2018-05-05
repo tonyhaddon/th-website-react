@@ -1,0 +1,9 @@
+@import "../../css/toolkit.css";
+
+.panelColumn
+{
+	lost-column: 8/10;
+	lost-offset: 1/10;
+	padding-top: calc($base-increment * 6);
+	padding-bottom: calc($base-increment * 6);
+}

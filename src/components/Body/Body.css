@@ -1,0 +1,41 @@
+@import "../../css/toolkit.css";
+
+/* TODO: 
+
+	Do the grid with Lost instead and ditch the bootstrap.
+
+ */
+
+
+body {
+
+	/* AS OPPOSED TO .body */
+ 	font-size: $base-font-size;
+ 	padding: 20px;
+	
+	background-color: #ffffff; // Old browsers
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,7ab8d4+100 */
+	background: #ffffff; /* Old browsers */
+
+	$gradient-x: 50%;
+	$gradient-y: 10%;
+
+	background: radial-gradient(ellipse at $gradient-x $gradient-y, #ffffff 1%,$light-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background-position: fixed;
+}
+
+.body
+{
+
+	lost-center: 960px;
+
+}
+
+.panelsContainer
+{
+	margin-top: calc($base-increment * 40);
+	lost-column: 10/12;
+	lost-offset: 1/12;
+}
+
+

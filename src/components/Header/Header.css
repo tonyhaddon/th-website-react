@@ -1,0 +1,43 @@
+@import "../../css/toolkit.css";
+
+.headerBase {
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  box-shadow: 0 2px 11px rgba(0,0,0,0.5);
+  transition: all 0.4s ease-out;
+}
+
+.headerNormal
+{
+  composes: headerBase;
+}
+
+.headerHidden
+{
+  composes: headerBase;
+  transform: translate(0,-150%);
+}
+
+.headerTitle
+{
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: $base-increment * 3;
+	letter-spacing: 5px;
+	margin: 0;
+}
+
+.headerSubtitle
+{
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: $base-increment * 2;
+	margin: 0;
+}

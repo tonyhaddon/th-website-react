@@ -1,0 +1,15 @@
+/* _variables.scss */
+
+$border-color: #eee;
+
+/* COLORS */
+
+$text-color: #4E7687;
+
+$light-blue: #7ab8d4;
+
+/* Basic dimensions */
+
+$base-increment: 11px;
+$base-font-size: 24px;
+$text-line-height: $base-increment * 2;
