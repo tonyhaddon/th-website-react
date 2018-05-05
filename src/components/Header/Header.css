@@ -41,3 +41,13 @@
 	line-height: $base-increment * 2;
 	margin: 0;
 }
+
+.actionsPanel
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: calc($base-increment * 3);
+  top: calc($base-increment * 3);
+}

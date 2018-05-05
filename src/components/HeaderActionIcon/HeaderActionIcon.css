@@ -1,0 +1,28 @@
+@import "../../css/toolkit.css";
+
+.base
+{
+	height: calc($base-increment * 3);
+	width: calc($base-increment * 3);
+	vertical-align: middle;
+	border-radius: calc($base-increment * 2);
+	margin-right: calc($base-increment * 2);
+	position: relative;
+}
+
+img
+{
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.normal
+{
+	composes: base;
+}
+
+svg {
+
+}
