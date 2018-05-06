@@ -13,7 +13,7 @@
 
 	transition: all 0.3s ease-in;
 	@include headingAttributes();
-	@include lineHeightMult(5);
+	line-height: calc($base-increment * 5);
 	margin-bottom: $base-increment;
 }
 
@@ -38,7 +38,7 @@
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 24px;
-	@include lineHeightMult(3);	
+	line-height: calc($base-increment * 3);
 }
 
 .subtitleNormal

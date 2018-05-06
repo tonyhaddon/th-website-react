@@ -8,21 +8,35 @@
 	border-radius: calc($base-increment * 2);
 	margin-right: calc($base-increment * 2);
 	position: relative;
+	transition: all 0.2s ease-in;
+	text-indent: -99999em;
 }
 
-img
+.base:hover
 {
-	position: absolute;
-	top: 47%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	
 }
 
-.normal
+.envelope
 {
 	composes: base;
+	background: url(./src/envelope.svg) no-repeat 50% 50%;	
 }
 
-svg {
+.envelope:hover
+{
+	background: url(./src/envelope_hover.svg) no-repeat 50% 50%;
+	background-color: $action-icon-bgcolor;
+}
 
+.pdf
+{
+	composes: base;
+	background: url(./src/pdf.svg) no-repeat 50% 50%;	
+}
+
+.pdf:hover
+{
+	background: url(./src/pdf_hover.svg) no-repeat 50% 50%;
+	background-color: $action-icon-bgcolor;
 }

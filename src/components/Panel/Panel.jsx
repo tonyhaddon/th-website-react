@@ -41,7 +41,7 @@ export default class Panel extends React.Component {
 
         });
 
-        console.log('subpanelContentArray',this.subpanelContentArray);
+        // console.log('subpanelContentArray',this.subpanelContentArray);
 
      }
 

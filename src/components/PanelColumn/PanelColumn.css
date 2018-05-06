@@ -6,4 +6,5 @@
 	lost-offset: 1/10;
 	padding-top: calc($base-increment * 6);
 	padding-bottom: calc($base-increment * 6);
+	line-height: calc($base-increment * 3);
 }

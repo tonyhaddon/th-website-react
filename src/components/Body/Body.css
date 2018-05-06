@@ -33,7 +33,7 @@ body {
 
 .panelsContainer
 {
-	margin-top: calc($base-increment * 40);
+	margin-top: 80vh;
 	lost-column: 10/12;
 	lost-offset: 1/12;
 }

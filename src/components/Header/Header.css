@@ -29,7 +29,7 @@
 {
 	text-transform: uppercase;
 	font-size: 24px;
-	line-height: $base-increment * 3;
+	line-height: calc($base-increment * 3);
 	letter-spacing: 5px;
 	margin: 0;
 }
@@ -38,7 +38,7 @@
 {
 	text-transform: uppercase;
 	font-size: 14px;
-	line-height: $base-increment * 2;
+	line-height: calc($base-increment * 3);
 	margin: 0;
 }
 

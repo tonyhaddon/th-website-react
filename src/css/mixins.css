@@ -11,6 +11,3 @@
 	letter-spacing: 10px;
 	font-weight: 200;
 }
-@mixin lineHeightMult($number: 1, $bi: $base-increment ) {
-	line-height: $bi * $number;
-}
