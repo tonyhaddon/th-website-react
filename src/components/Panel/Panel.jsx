@@ -10,40 +10,55 @@ export default class Panel extends React.Component {
     super(props);
 
     this.subpanelContentArray = [];
-    this.ratingBadgeArray = [];
+    this.ratingBadgeArray;
    
     // If a contentArray is passed... 
     if (typeof this.props.contentArray !== "undefined") {
-     if (this.props.contentArray.length > 1) {
         // console.log('this.props.contentArray',this.props.contentArray);
+
+     // if (this.props.contentArray.length > 1) {
         this.props.contentArray.map(( contentItem, i ) => {
+           
+          // Add the subheader
+          this.subpanelContentArray.push(
+            <div className={ styles.subHeader } key={ 'cik_' + i } >{ contentItem.title }</div>
+          );
 
-         // Initialize the array variable for each loop...
-         this.ratingBadgeArray = [];
-         
-         // Add the subheader
-         this.subpanelContentArray.push(
-           <div className={ styles.subHeader } key={ 'cik_' + i } >{ contentItem.title }</div>
-         );
+          console.log('contentItem.contents',contentItem.contents, typeof contentItem.contents);
 
-         // Build the array of RatingsBadges from contentItem's contents subarray...
-         contentItem.contents.map((badgeContentItem,k) => {
-          // console.log('badgeContentItem',badgeContentItem);
-           this.ratingBadgeArray.push(<RatingBadge key={'k_' + k} name={ badgeContentItem.skillName } rating={badgeContentItem.skillRating} />)
-           return true;
-         });
+          if (typeof contentItem.contents === 'object') {
 
-         // Append to the column div
-         this.subpanelContentArray.push(
-           <PanelColumn key={ 'rba_' + i }>{ this.ratingBadgeArray }</PanelColumn>
-         );
-         return true;
+            // This means skill ratings badges
+            // Initialize the array variable for each loop...
+            this.ratingBadgeArray = [];
+
+            // Build the array of RatingsBadges from contentItem's contents subarray...
+            contentItem.contents.map((badgeContentItem,k) => {
+
+              // console.log('badgeContentItem',badgeContentItem);
+              this.ratingBadgeArray.push(<RatingBadge key={'k_' + k} name={ badgeContentItem.skillName } rating={ badgeContentItem.skillRating } />)
+              return true;
+            });
+
+            // Append to the column div
+            this.subpanelContentArray.push(
+             <PanelColumn key={ 'rba_' + i }>{ this.ratingBadgeArray }</PanelColumn>
+            );
+
+          }
+          else
+          {
+            this.subpanelContentArray.push(
+             <PanelColumn key={ 'rba_' + i } markup={ contentItem.contents } />
+            );
+          }
+          return true;
 
         });
 
-        // console.log('subpanelContentArray',this.subpanelContentArray);
+        console.log('subpanelContentArray',this.subpanelContentArray);
 
-     }
+     // }
 
     } 
 

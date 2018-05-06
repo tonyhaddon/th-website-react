@@ -65,6 +65,14 @@ export default class App extends React.Component {
             skillRating: 2,
           }
         ]
+      },
+      {
+        contentType: 'ROLE',
+        title: 'BriteBill – Product UI Designer',
+        subtitle: 'September ’16 - Present',
+        contents: `<p class="intro">
+                      I made an internal move from a general design service role (see earlier role below) to a full-time concentration on the UI for the BriteBill product suite. I became the sole designer on a product where  design implementation needed significant improvement. I refined the UI kit and developed set of style rules that provided a rhythm to the UI and were easy to remember.
+                  </p>`
       }
     ]
   }
@@ -72,8 +80,8 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className={styles.app}>
-        <Body contents={this.contents} />
+      <div className={ styles.app }>
+        <Body contents={ this.contents } />
       </div>
     );
   }
