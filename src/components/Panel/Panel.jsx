@@ -1,6 +1,6 @@
 import styles from './Panel.css';
-import PanelColumn from '../PanelColumn';
 import React from 'react';
+import PanelColumn from '../PanelColumn/PanelColumn';
 import RatingBadge from '../RatingBadge/RatingBadge';
 
 
@@ -9,8 +9,10 @@ export default class Panel extends React.Component {
   constructor(props) {
     super(props);
 
-    this.subpanelContentArray = [];
-    this.ratingBadgeArray;
+    this.subPanelContentArray = [];
+    this.ratingBadgeArray = [];
+    // pass panelIndex for keys
+    let panelIndex = this.props.panelIndex;
    
     // If a contentArray is passed... 
     if (typeof this.props.contentArray !== "undefined") {
@@ -20,13 +22,13 @@ export default class Panel extends React.Component {
         this.props.contentArray.map(( contentItem, i ) => {
            
           // Add the subheader
-          this.subpanelContentArray.push(
-            <div className={ styles.subHeader } key={ 'cik_' + i } >{ contentItem.title }</div>
+          this.subPanelContentArray.push(
+            this.buildSubHeader(contentItem, panelIndex, i)
           );
 
           console.log('contentItem.contents',contentItem.contents, typeof contentItem.contents);
 
-          if (typeof contentItem.contents === 'object') {
+          if (contentItem.contentType === 'SKILLS') {
 
             // This means skill ratings badges
             // Initialize the array variable for each loop...
@@ -41,22 +43,22 @@ export default class Panel extends React.Component {
             });
 
             // Append to the column div
-            this.subpanelContentArray.push(
+            this.subPanelContentArray.push(
              <PanelColumn key={ 'rba_' + i }>{ this.ratingBadgeArray }</PanelColumn>
             );
 
           }
           else
           {
-            this.subpanelContentArray.push(
-             <PanelColumn key={ 'rba_' + i } markup={ contentItem.contents } />
+            this.subPanelContentArray.push(
+             <PanelColumn key={ 'rba_' + i } contents={ contentItem.contents } />
             );
           }
           return true;
 
         });
 
-        console.log('subpanelContentArray',this.subpanelContentArray);
+        console.log('subPanelContentArray',this.subPanelContentArray);
 
      // }
 
@@ -64,13 +66,34 @@ export default class Panel extends React.Component {
 
   }
 
+  buildSubHeader(contentItem, p, i) {
+  
+    let subHeaderContents = [], theStyle;
+
+    
+    //  does the contentItem have a subtitle, if so, add a <p> for it...
+    if (contentItem.subtitle) {
+      subHeaderContents.push(<p key={ 'tt_' + p + '_' + i  } className={ styles.subHeaderTitleWithSubtitle }>{ contentItem.title }</p>);
+      subHeaderContents.push(<p key={ 'st_' + p + '_' + i  } className={ styles.subHeaderSubtitle }>{ contentItem.subtitle }</p>);
+      theStyle = styles.subHeaderWithSubtitle;
+    } else {
+      subHeaderContents.push(<p key={ 'tt_' + p + '_' + i  } className={ styles.subHeaderTitle }>{ contentItem.title }</p>);
+      theStyle = styles.subHeader;
+    }
+
+    return (
+      <div className={ theStyle } key={ 'cik_' + p + '_' + i } >{ subHeaderContents }</div>      
+    );
+
+  }
+
   render() { 
     return (
-      <div className={styles.panel}>
-          <div className={styles.panelHeader}>{this.props.panelTitle}</div>
-          <div className={styles.panelPanel}>
+      <div className={ styles.panel }>
+          <div className={ styles.panelHeader }>{ this.props.panelTitle }</div>
+          <div className={ styles.panelPanel }>
               
-              <div className={styles.panelColumn}>{ (this.subpanelContentArray.length === 0) ? <PanelColumn>{this.props.children}</PanelColumn> : this.subpanelContentArray }</div>
+              <div className={ styles.panelColumn }>{ (this.subPanelContentArray.length === 0) ? <PanelColumn key={ 'pck_' + this.panelIndex }>{ this.props.children }</PanelColumn> : this.subPanelContentArray }</div>
           </div>
       </div>
     );

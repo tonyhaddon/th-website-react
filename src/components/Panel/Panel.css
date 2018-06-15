@@ -10,15 +10,48 @@
 
 }
 
+.subHeaderBase
+{
+	lost-column: 8/8;
+	padding: calc($base-increment * 2) 0;
+	background-color: #F0FAFF;
+}
+
 .subHeader
 {
-	background-color: #F0FAFF;
+	composes: subHeaderBase;
 	text-align: center;
+}
+
+.subHeaderWithSubtitle
+{
+	composes: subHeaderBase;
+	text-align: left;
+}
+
+.subHeaderTitle
+{
 	font-size: 32px;
 	font-weight: 600;
 	line-height: calc($base-increment * 3);
-	lost-column: 10/10;
-	padding: calc($base-increment * 2) 0;
+	margin: 0;
+	lost-column: 6/8;
+	lost-offset: 1/8;
+}
+
+.subHeaderTitleWithSubtitle
+{
+	composes: subHeaderTitle;
+	margin-bottom: 0;
+}
+
+.subHeaderSubtitle
+{
+	font-size: 18px;
+	line-height: calc($base-increment * 3);
+	lost-column: 6/8;
+	lost-offset: 1/8;
+	margin: 0;
 }
 
 .panelPanel
