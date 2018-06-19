@@ -8,7 +8,7 @@ export default class SiteHeading extends React.Component {
 		return (
 			<div className={styles.containerNormal}>
 				<h1 className={(this.props.fadeIt) ? styles.titleFadeout : styles.titleNormal}>Tony Haddon</h1>
-				<p className={(this.props.fadeIt) ? styles.subtitleFadeout : styles.subtitleNormal}>Designer</p>
+				<p className={(this.props.fadeIt) ? styles.subtitleFadeout : styles.subtitleNormal}>Design CV</p>
 			</div>
 		);
 	}

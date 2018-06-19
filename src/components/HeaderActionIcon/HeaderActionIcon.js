@@ -7,7 +7,9 @@ class HeaderActionIcon extends Component {
 
 		return (
 
-				<a className={(this.props.actionType === 'contact') ? styles.envelope : styles.pdf } href={ this.props.actionHref }>
+				<a className={(this.props.actionType === 'contact') ? styles.envelope : styles.pdf }
+					href={ this.props.actionHref }
+					title={ (this.props.actionType === 'contact') ? 'Get in touch' : 'Download a PDF version' }>
 					{this.props.actionText}
 				</a>
 		);

@@ -193,7 +193,8 @@ module.exports = {
                         // https://github.com/facebookincubator/create-react-app/issues/2677
                         ident: 'postcss',
                         plugins: () => [
-                          require('postcss-flexbugs-fixes'),
+                          require('precss'),
+                          require('postcss-flexbugs-fixes'),                    
                           require('lost'),
                           autoprefixer({
                             browsers: [
@@ -272,6 +273,8 @@ module.exports = {
         // https://github.com/facebookincubator/create-react-app/issues/2376
         // Pending further investigation:
         // https://github.com/mishoo/UglifyJS2/issues/2011
+        drop_debugger: true,
+        drop_console: true,
         comparisons: false,
       },
       mangle: {

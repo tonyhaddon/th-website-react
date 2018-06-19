@@ -31,7 +31,7 @@
 
 .subHeaderTitle
 {
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 600;
 	line-height: calc($base-increment * 3);
 	margin: 0;

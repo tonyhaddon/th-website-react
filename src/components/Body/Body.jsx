@@ -13,7 +13,7 @@ export default class Body extends React.Component {
 
     this.state = {
       mainHeadingFadeState: false,
-      topHeadingFadeState: true
+      topHeadingFadeState: false
     }
     this.handleScroll = this.handleScroll.bind(this);
     
@@ -71,7 +71,6 @@ export default class Body extends React.Component {
   }
 
   render() {
-
 
     return (
       <div className={ styles.body }>

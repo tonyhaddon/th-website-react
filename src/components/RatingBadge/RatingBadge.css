@@ -8,7 +8,7 @@
 
 .badge
 {
-	lost-column: 1/2;
+	lost-column: 1/2 2;
 	text-align: center;
 	margin: calc($base-increment * 2) 0;
 }

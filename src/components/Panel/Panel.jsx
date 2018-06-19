@@ -51,7 +51,7 @@ export default class Panel extends React.Component {
           else
           {
             this.subPanelContentArray.push(
-             <PanelColumn key={ 'rba_' + i } contents={ contentItem.contents } />
+             <PanelColumn key={ 'rba_' + i } panelColumnIndex={ i } contents={ contentItem.contents } />
             );
           }
           return true;
@@ -93,7 +93,7 @@ export default class Panel extends React.Component {
           <div className={ styles.panelHeader }>{ this.props.panelTitle }</div>
           <div className={ styles.panelPanel }>
               
-              <div className={ styles.panelColumn }>{ (this.subPanelContentArray.length === 0) ? <PanelColumn key={ 'pck_' + this.panelIndex }>{ this.props.children }</PanelColumn> : this.subPanelContentArray }</div>
+              <div className={ styles.panelColumn }>{ (this.subPanelContentArray.length === 0) ? <PanelColumn key={ 'pck_' + this.panelIndex } panelIndex={ this.panelIndex }>{ this.props.children }</PanelColumn> : this.subPanelContentArray }</div>
           </div>
       </div>
     );

@@ -1,5 +1,6 @@
 {
   "name": "th-react",
+  "homepage": "/cv/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -92,7 +93,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "create-react-component-folder": "^0.1.17",
+    "create-react-component-folder": "^0.1.20",
     "lost": "^8.2.1",
     "precss": "^3.1.2"
   }

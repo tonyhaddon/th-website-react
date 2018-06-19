@@ -20,18 +20,23 @@ class PanelColumn extends Component {
 
   		// Build 'listItems'
 
+      let listItems;
+
   		console.log('c.listItems:', c.listItems, 'this.props.contents',this.props.contents);
 
-  		let listItems = c.listItems.map((listItem,i) => {
-	  			return (
-	  				<li key={ 'roleitem_' + i }>{ listItem }</li>
-	  			)
-	  		}
-  		);
+  		if (c.listItems) {
 
-  		output.push(<p key={ 'rlint' + this.props.panelIndex } className={ styles.roleIntro }>{ intro }</p>);
-  		output.push(<p key={ 'rlliint' + this.props.panelIndex } className={ styles.listIntro }>{ listIntro }</p>);
-  		output.push(<ul key={ 'rllii' + this.props.panelIndex } className={ styles.list }>{ listItems }</ul>);
+        listItems = c.listItems.map((listItem,i) => {
+            return (
+              <li key={ 'roleitem_' + i }>{ listItem }</li>
+            )
+          }
+  		  );
+      }
+
+  		if (intro) output.push(<p key={ 'rlint' + this.props.panelColumnIndex } className={ styles.roleIntro }>{ intro }</p>);
+  		if (listIntro) output.push(<p key={ 'rlliint' + this.props.panelColumnIndex } className={ styles.listIntro }>{ listIntro }</p>);
+  		if (listItems) output.push(<ul key={ 'rllii' + this.props.panelColumnIndex } className={ styles.list }>{ listItems }</ul>);
 
   	} else {
   		// This is only true if the SKILLS type of content is passed

@@ -1,5 +1,7 @@
 @import "../../css/toolkit.css";
 
+@lost cycle none;
+
 .panelColumn
 {
 	lost-column: 6/8;
@@ -7,4 +9,39 @@
 	padding-top: calc($base-increment * 6);
 	padding-bottom: calc($base-increment * 6);
 	line-height: calc($base-increment * 3);
+}
+
+.roleIntro
+{
+	font-style: italic;
+	margin-top: 0;
+}
+
+.listShared
+{
+	font-size: 18px;
+}
+
+.listIntro
+{
+	composes: listShared;
+}
+
+.list
+{
+	composes: listShared;
+	padding-left: 14px;
+	list-style-type: none;
+}
+
+.list li:before
+{
+	content: '—';
+	text-indent: 5px;
+}
+
+.list li
+{
+	text-indent: -14px;
+	margin-bottom: $base-increment;
 }

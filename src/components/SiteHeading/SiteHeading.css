@@ -15,6 +15,7 @@
 	@include headingAttributes();
 	line-height: calc($base-increment * 5);
 	margin-bottom: $base-increment;
+	font-weight: 300;
 }
 
 .titleNormal
