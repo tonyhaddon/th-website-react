@@ -1,14 +1,15 @@
 @import "../../css/toolkit.css";
 
-@lost cycle none;
+/*@lost cycle none;*/
 
 .panelColumn
 {
-	lost-column: 6/8;
-	lost-offset: 1/8;
-	padding-top: calc($base-increment * 6);
-	padding-bottom: calc($base-increment * 6);
+	lost-column: 16/18 16;
+	lost-offset: 1/18;
+	padding-top: calc($base-increment * 3);
+	padding-bottom: calc($base-increment * 3);
 	line-height: calc($base-increment * 3);
+	lost-utility: clearfix;
 }
 
 .roleIntro
@@ -44,4 +45,17 @@
 {
 	text-indent: -14px;
 	margin-bottom: $base-increment;
+}
+
+@media screen and (min-width: $iphone-landscape-width)  {
+	
+	.panelColumn
+	{
+		lost-column: 6/8;
+		lost-offset: 1/8;
+		padding-top: calc($base-increment * 6);
+		padding-bottom: calc($base-increment * 6);
+		line-height: calc($base-increment * 3);
+	}
+
 }

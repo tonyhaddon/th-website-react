@@ -6,16 +6,17 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	z-index: -1;
 }
 
 .titleBase
 {
 
 	transition: all 0.3s ease-in;
-	@include headingAttributes();
-	line-height: calc($base-increment * 5);
-	margin-bottom: $base-increment;
-	font-weight: 300;
+	@include headingAttributesMobile();
+	margin-top: $base-increment;
+	
+	
 }
 
 .titleNormal
@@ -38,8 +39,9 @@
 	transition: all 0.3s ease-in;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 24px;
-	line-height: calc($base-increment * 3);
+	font-size: 18px;
+	line-height: calc($base-increment * 2);
+	margin-top: 0;
 }
 
 .subtitleNormal
@@ -57,3 +59,19 @@
 	transform: translate(0,-20%);
 }
 
+@media screen and (min-width: $iphone-landscape-width)  {
+	
+	.titleBase
+	{
+		@include headingAttributes();
+		margin-bottom: $base-increment;
+	}
+
+	.subtitleBase
+	{
+		font-size: 24px;
+		line-height: calc($base-increment * 3);
+
+	}
+
+}

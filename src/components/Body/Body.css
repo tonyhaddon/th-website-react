@@ -8,7 +8,6 @@
   	grid-template-areas: 
 	    ". main .";*/
 
-	lost-center: 980px;
 }
 
 body {
@@ -16,15 +15,13 @@ body {
 	/* AS OPPOSED TO .body */
  	font-size: $base-font-size;	
 	background-color: #ffffff; // Old browsers
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,7ab8d4+100 */
 	background: #ffffff; /* Old browsers */
 
 	$gradient-x: 50%;
-	$gradient-y: 10%;
+	$gradient-y: 50%;
 
-	background: radial-gradient(ellipse at $gradient-x $gradient-y, #ffffff 1%, $light-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	background-position: fixed;
-
+	background-image: radial-gradient(circle at $gradient-x $gradient-y, #ffffff, $light-blue); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background-attachment: fixed;
 
 }
 
@@ -32,9 +29,50 @@ body {
 
 .panelsContainer
 {
+	
 	margin-top: 80vh;
-	lost-column: 8/12;
-	lost-offset: 2/12;
+}
+
+
+
+
+@media screen and (min-width: $iphone-landscape-width)  {
+
+	
+
+	.body
+	{
+		/*display: grid;
+		grid-template-columns: auto 960px auto;
+	  	grid-template-rows: auto;
+	  	grid-template-areas: 
+		    ". main .";*/
+
+		lost-center: 980px;
+
+		
+	}
+
+	body {
+
+		/* AS OPPOSED TO .body */
+	 	$gradient-x: 50%;
+	 	$gradient-y: 10%;
+		background: radial-gradient(ellipse at $gradient-x $gradient-y, #ffffff 1%, $light-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background-position: fixed;
+
+	}
+
+	.panelsContainer
+	{
+		
+		lost-column: 8/12;
+		lost-offset: 2/12;
+
+	}
+
+	
+
 }
 
 

@@ -6,8 +6,17 @@
 
 @mixin headingAttributes() {
 	font-size: 48px;
-	text-align: center;
-	text-transform: uppercase;
 	letter-spacing: 10px;
 	font-weight: 200;
+	line-height: calc($base-increment * 5);
+	text-transform: uppercase;
+}
+
+@mixin headingAttributesMobile() {
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 300;
+	line-height: calc($base-increment * 3);
 }

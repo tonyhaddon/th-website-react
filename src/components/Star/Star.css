@@ -1,6 +1,8 @@
+@import "../../css/toolkit.css";
+
 .base {
-	height: 22px;
-	margin-right: 11px;
+	height: 16px;
+	margin-right: 7px;
 }
 
 
@@ -13,4 +15,13 @@
 	composes: base;
 	border: solid 1px blue;
 	
+}
+
+@media screen and (min-width: 568px)  {
+
+	.base {
+		height: 22px;
+		margin-right: 11px;
+	}
+
 }

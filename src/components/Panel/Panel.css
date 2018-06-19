@@ -1,19 +1,24 @@
 @import "../../css/toolkit.css";
 
 
+.panel
+{
+	lost-utility: clearfix;
+}
 
 .panelHeader
 {
-	@include headingAttributes();	
+	@include headingAttributesMobile();	
 	text-align: center;
-	margin-bottom: calc($base-increment * 8);
-
+	margin-bottom: calc($base-increment * 2);
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .subHeaderBase
 {
-	lost-column: 8/8;
-	padding: calc($base-increment * 2) 0;
+	
+	padding: calc($base-increment * 1) 0;
 	background-color: #F0FAFF;
 }
 
@@ -21,36 +26,40 @@
 {
 	composes: subHeaderBase;
 	text-align: center;
+	lost-column: 18/18;
 }
 
 .subHeaderWithSubtitle
 {
 	composes: subHeaderBase;
 	text-align: left;
+	lost-column: 18/18;
 }
 
 .subHeaderTitle
 {
-	font-size: 28px;
+	font-size: 20px;
 	font-weight: 600;
 	line-height: calc($base-increment * 3);
 	margin: 0;
-	lost-column: 6/8;
-	lost-offset: 1/8;
+	lost-column: 16/18 16;
+	lost-offset: 1/18;
 }
 
 .subHeaderTitleWithSubtitle
 {
 	composes: subHeaderTitle;
 	margin-bottom: 0;
+	text-align:left;
 }
 
 .subHeaderSubtitle
 {
 	font-size: 18px;
 	line-height: calc($base-increment * 3);
-	lost-column: 6/8;
-	lost-offset: 1/8;
+	lost-column: 16/18 16;
+	lost-offset: 1/18;
+	text-align: left;
 	margin: 0;
 }
 
@@ -66,4 +75,43 @@
 	position:fixed;
 }
 
+@media screen and (min-width: $iphone-landscape-width)  {
+	.panelHeader
+	{
+		@include headingAttributes();	
+		text-align: center;
+		margin-bottom: calc($base-increment * 8);
 
+	}
+
+	.subHeaderTitle
+	{
+		font-size: 28px;
+		line-height: calc($base-increment * 3);
+		margin: 0;
+		lost-column: 6/8;
+		lost-offset: 1/8;
+	}
+
+	.subHeaderBase
+	{
+	
+		padding: calc($base-increment * 2) 0;
+		background-color: #F0FAFF;
+	}
+
+	.subHeader
+	{
+		composes: subHeaderBase;
+		text-align: center;
+
+	}
+
+	.subHeaderWithSubtitle
+	{
+		composes: subHeaderBase;
+		text-align: left;
+
+
+	}
+}

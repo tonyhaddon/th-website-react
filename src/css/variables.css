@@ -14,3 +14,4 @@ $action-icon-bgcolor: rgba(122,184,211,0.7);
 $base-increment: 11px;
 $base-font-size: 24px;
 $text-line-height: $base-increment * 2;
+$iphone-landscape-width: 570px;

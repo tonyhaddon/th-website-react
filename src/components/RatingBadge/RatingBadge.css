@@ -3,7 +3,7 @@
 
 .logo
 {
-	width: 70px;
+	width: 50px;
 }
 
 .badge
@@ -11,4 +11,12 @@
 	lost-column: 1/2 2;
 	text-align: center;
 	margin: calc($base-increment * 2) 0;
+}
+
+@media screen and (min-width: 568px)  {
+
+	.logo
+	{
+		width: 70px;
+	}
 }

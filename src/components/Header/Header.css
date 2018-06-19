@@ -51,3 +51,10 @@
   right: calc($base-increment * 3);
   top: calc($base-increment * 3);
 }
+
+@media screen and (min-width: $iphone-landscape-width)  {
+  .headerNormal
+  {
+    composes: headerHidden;
+  }
+}
