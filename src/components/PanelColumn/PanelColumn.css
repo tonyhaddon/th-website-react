@@ -1,6 +1,6 @@
 @import "../../css/toolkit.css";
 
-/*@lost cycle none;*/
+@lost cycle none;
 
 .panelColumn
 {
@@ -56,6 +56,11 @@
 		padding-top: calc($base-increment * 6);
 		padding-bottom: calc($base-increment * 6);
 		line-height: calc($base-increment * 3);
+	}
+
+	.listShared
+	{
+		font-size: 20px;
 	}
 
 }

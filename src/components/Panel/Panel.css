@@ -112,6 +112,12 @@
 		composes: subHeaderBase;
 		text-align: left;
 
+	}
 
+	.subHeaderSubtitle
+	{
+		
+		lost-column: 6/8 6;
+		lost-offset: 1/8;
 	}
 }

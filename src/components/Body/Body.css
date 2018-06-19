@@ -1,5 +1,9 @@
 @import "../../css/toolkit.css";
 
+
+
+
+
 .body
 {
 	/*display: grid;
@@ -57,9 +61,9 @@ body {
 
 		/* AS OPPOSED TO .body */
 	 	$gradient-x: 50%;
-	 	$gradient-y: 10%;
-		background: radial-gradient(ellipse at $gradient-x $gradient-y, #ffffff 1%, $light-blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		background-position: fixed;
+	 	$gradient-y: 50%;
+		background: radial-gradient(circle at $gradient-x $gradient-y, #ffffff, $light-blue); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background-attachment: fixed;
 
 	}
 
