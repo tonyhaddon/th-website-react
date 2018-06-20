@@ -68,8 +68,9 @@ export default class App extends React.Component {
       },
       {
         contentType: 'ROLE',
-        title: 'BriteBill – Product UI Designer',
-        subtitle: 'September ’16 - Present',
+        title: 'Product UI Designer',
+        companyName: 'BriteBill',
+        jobDates: 'September ’16 - Present',
         contents: {
           intro: 'I made an internal move from a general design service role (see earlier role below) to a full-time concentration on the UI for the BriteBill product suite. I became the sole designer on a product where  design implementation needed significant improvement. I refined the UI kit and developed set of style rules that provided a rhythm to the UI and were easy to remember.',
           listIntro: 'Working under the head of product management, I:',
@@ -85,8 +86,9 @@ export default class App extends React.Component {
       },
       {
         contentType: 'ROLE',
-        title: 'BriteBill – Senior Creative Designer',
-        subtitle: 'February ’11 - September ’16',
+        title: 'Senior Creative Designer',
+        companyName: 'BriteBill',
+        jobDates: 'February ’11 - September ’16',
         contents: {
           intro: 'This was a contract relief position at first, covering the duties of the creative director while he took an extended period of annual leave. I was unexpectedly offered the opportunity to stay on before my contract term had expired.',
           listIntro: 'Working on the delivery team under the creative director, I:',
@@ -102,8 +104,9 @@ export default class App extends React.Component {
       },
       {
         contentType: 'ROLE',
-        title: 'O2 Ireland - Front-end Web Developer',
-        subtitle: 'October ’07 - November ’10',
+        title: 'Front-end Web Developer',
+        companyName: 'Telefónica O2 Ireland',
+        jobDates: 'October ’07 - November ’10',
         contents: {
           intro: 'I went in initially to work on one specific contract, then took a full-time position that became available while I was there.',
           listIntro: 'Working on the digital team:',
@@ -117,23 +120,26 @@ export default class App extends React.Component {
       {
         contentType: 'ROLE',
         title: 'Self-employed',
-        subtitle: 'Nov ’03 - September ’07',
+        companyName: false,
+        jobDates: 'Nov ’03 - September ’07',
         contents: {
           intro: 'For a little over 3 years, I operated as a sole trader, working on numerous projects of various sizes. My involvement was total — from planning and communications with the clients through to delivery. The job type varied; sometimes it was graphic design only, sometimes website design and build, sometimes training a client’s staff in web standards-compliance (which was big at the time). Of course, being self-employed meant having to manage my own finances and keep accounts too.'
         }
       },
       {
         contentType: 'ROLE',
-        title: 'Resonance — Developer',
-        subtitle: 'June ‘00 - November ‘03',
+        title: 'Developer',
+        companyName: 'Resonance',
+        jobDates: 'June ‘00 - November ‘03',
         contents: {
           intro: 'Resonance was a small design company who took me on to assist in their expanding website development business.'
         }
       },
       {
         contentType: 'ROLE',
-        title: 'Interactive Services - Senior Designer',
-        subtitle: 'September ’98 - June ’00',
+        title: 'Senior Designer',
+        companyName: 'Interactive Services',
+        jobDates: 'September ’98 - June ’00',
         contents: {
           intro: 'An e-learning company delivering online training services mainly to the US market. I ran a team of designers generating 8-bit graphics, supervising quality and ensuring on-time delivery.'
         }

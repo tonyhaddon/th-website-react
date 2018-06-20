@@ -70,15 +70,18 @@ export default class Panel extends React.Component {
   
     let subHeaderContents = [], theStyle;
 
+    subHeaderContents.push(<p key={ 'tt_' + p + '_' + i  } className={ styles.subHeaderTitle }>{ contentItem.title }</p>);
+    theStyle = styles.subHeader;
     
-    //  does the contentItem have a subtitle, if so, add a <p> for it...
-    if (contentItem.subtitle) {
-      subHeaderContents.push(<p key={ 'tt_' + p + '_' + i  } className={ styles.subHeaderTitleWithSubtitle }>{ contentItem.title }</p>);
-      subHeaderContents.push(<p key={ 'st_' + p + '_' + i  } className={ styles.subHeaderSubtitle }>{ contentItem.subtitle }</p>);
+    //  Add <p>s for the relevant data...
+    if (contentItem.companyName) {
+      subHeaderContents.push(<p key={ 'rt_' + p + '_' + i  } className={ styles.subHeaderCompanyName }>{ contentItem.companyName }</p>);
       theStyle = styles.subHeaderWithSubtitle;
-    } else {
-      subHeaderContents.push(<p key={ 'tt_' + p + '_' + i  } className={ styles.subHeaderTitle }>{ contentItem.title }</p>);
-      theStyle = styles.subHeader;
+    }
+
+    if (contentItem.jobDates) {
+      subHeaderContents.push(<p key={ 'st_' + p + '_' + i  } className={ styles.subHeaderSubtitle }>{ contentItem.jobDates }</p>);
+      theStyle = styles.subHeaderWithSubtitle;
     }
 
     return (
