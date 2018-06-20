@@ -176,6 +176,7 @@ module.exports = {
                   ident: 'postcss',
                   plugins: () => [
                     require('precss'),
+                    require('autoprefixer'),
                     require('postcss-flexbugs-fixes'),
                     require('lost'),
                     autoprefixer({
