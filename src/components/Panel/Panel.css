@@ -19,7 +19,7 @@
 {
 	
 	padding: calc($base-increment * 2) 0;
-	background-color: #F0FAFF;
+	// background-color: #F0FAFF;
 }
 
 .subHeader
@@ -38,9 +38,10 @@
 
 .subHeaderTitle
 {
-	font-size: 30px;
-	font-weight: 600;
-	line-height: calc($base-increment * 3);
+	font-size: $font-size-2;
+	line-height: $lh-2;
+	font-weight: 700;
+	/*line-height: calc($base-increment * 3);*/
 	margin: 0;
 	lost-column: 16/18 16;
 	lost-offset: 1/18;
@@ -48,9 +49,9 @@
 
 .subHeaderCompanyName
 {
-	font-size: 20px;
-	font-weight: 600;
-	line-height: calc($base-increment * 3);
+	/*font-size: 20px;*/
+	font-weight: 400;
+	/*line-height: calc($base-increment * 3);*/
 	margin: 0;
 	lost-column: 16/18 16;
 	lost-offset: 1/18;
@@ -65,10 +66,7 @@
 
 .subHeaderSubtitle
 {
-	font-size: 18px;
 	font-weight: 400;
-	font-style: italic;
-	line-height: calc($base-increment * 2);
 	lost-column: 16/18 16;
 	lost-offset: 1/18;
 	text-align: left;
@@ -98,9 +96,9 @@
 
 	.subHeaderTitle
 	{
-		font-size: 52px;
-		line-height: calc($base-increment * 5);
-		margin: $base-increment 0;
+		font-size: $font-size-2;
+		line-height: $lh-2;
+		// margin: $base-increment 0;
 		lost-column: 6/8;
 		lost-offset: 1/8;
 	}
@@ -109,7 +107,7 @@
 	{
 	
 		padding: calc($base-increment * 2) 0;
-		background-color: #F0FAFF;
+		// background-color: #F0FAFF;
 	}
 
 	.subHeader
@@ -128,16 +126,17 @@
 
 	.subHeaderCompanyName
 	{
-		font-size: 32px;
-		margin: $base-increment 0;
+		/*font-size: 32px;*/
+		// margin: $base-increment 0;
 		lost-column: 6/8 6;
 		lost-offset: 1/8;
 	}
 
 	.subHeaderSubtitle
 	{
-		margin: $base-increment 0;
-		font-size: 24px;
+		// margin: $base-increment 0;
+		font-size: $font-size-half;
+		line-height: $lh-half;
 		lost-column: 6/8 6;
 		lost-offset: 1/8;
 	}

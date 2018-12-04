@@ -3,7 +3,7 @@
 
 html
 {
-	background-color: $text-color;
+	// background-color: $text-color;
 }
 
 
@@ -20,15 +20,16 @@ html
 body {
 
 	/* AS OPPOSED TO .body */
- 	font-size: $base-font-size;	
+ 	font-size: $base-font-size;
+ 	line-height: $text-line-height;
 	background-color: #ffffff; // Old browsers
 	background: #ffffff; /* Old browsers */
 
 	$gradient-x: 50%;
 	$gradient-y: 50%;
 
-	background-image: radial-gradient(circle at $gradient-x $gradient-y, #ffffff, $light-blue); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	background-attachment: fixed;
+	// background-image: radial-gradient(circle at $gradient-x $gradient-y, #ffffff, $light-blue); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// background-attachment: fixed;
 	box-shadow: 0 2px 0px rgba(0,0,0,0.25);
 	padding-top: 1px;
 }
@@ -65,16 +66,16 @@ body {
 		/* AS OPPOSED TO .body */
 	 	$gradient-x: 50%;
 	 	$gradient-y: 50%;
-		background: radial-gradient(circle at $gradient-x $gradient-y, #ffffff, $light-blue); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		background-attachment: fixed;
+		// background: radial-gradient(circle at $gradient-x $gradient-y, #ffffff, $light-blue); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		// background-attachment: fixed;
 
 	}
 
 	.panelsContainer
 	{
 		
-		lost-column: 8/12;
-		lost-offset: 2/12;
+		lost-column: 10/12;
+		lost-offset: 1/12;
 
 	}
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700');
 @import "../../css/toolkit.css";
 
 html, body {
@@ -14,5 +14,5 @@ html, body {
 	/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
 	font-size: inherit;
 	color: $text-color;
-	font-weight: 300;
+	font-weight: 400;
 }

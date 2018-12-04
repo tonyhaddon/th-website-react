@@ -8,19 +8,21 @@
 	lost-offset: 1/18;
 	padding-top: calc($base-increment * 3);
 	padding-bottom: calc($base-increment * 3);
-	line-height: calc($base-increment * 3);
+	/*line-height: calc($base-increment * 3);*/
+	/*line-height: 1.2em;*/
 	lost-utility: clearfix;
 }
 
 .roleIntro
 {
-	font-style: italic;
+	font-weight: 700;
 	margin-top: 0;
+	/*font-size: 18px;*/
 }
 
 .listShared
 {
-	font-size: 18px;
+	/*font-size: 18px;*/
 }
 
 .listIntro
@@ -32,19 +34,21 @@
 {
 	composes: listShared;
 	padding-left: 14px;
-	list-style-type: none;
+	list-style-type: disc;
 }
 
-.list li:before
+/*.list li:before
 {
 	content: '—';
 	text-indent: 5px;
-}
+}*/
 
 .list li
 {
-	text-indent: -14px;
-	margin-bottom: $base-increment;
+	/*text-indent: -14px;*/
+	padding-left: 1ex;
+	margin-bottom: 1.618ex;
+	margin-left: 1ex;
 }
 
 @media screen and (min-width: $iphone-landscape-width)  {
@@ -55,12 +59,18 @@
 		lost-offset: 1/8;
 		padding-top: calc($base-increment * 6);
 		padding-bottom: calc($base-increment * 6);
-		line-height: calc($base-increment * 3);
+		/*line-height: calc($base-increment * 3);*/
+		/*line-height: 1.6em;*/
 	}
 
 	.listShared
 	{
-		font-size: 20px;
+		/*font-size: 20px;*/
+	}
+
+	.roleIntro
+	{
+		/*font-size: 20px;*/
 	}
 
 }

@@ -93,7 +93,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "create-react-component-folder": "^0.1.20",
+    "create-react-component-folder": "^0.1.26",
     "lost": "^8.2.1",
     "precss": "^3.1.2"
   }

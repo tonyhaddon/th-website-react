@@ -11,7 +11,26 @@ $action-icon-bgcolor: rgba(122,184,211,0.7);
 
 /* Basic dimensions */
 
-$base-increment: 11px;
+$base-increment: 1ex;
 $base-font-size: 24px;
-$text-line-height: $base-increment * 2;
+$text-line-height: 37px;
 $iphone-landscape-width: 570px;
+
+/* Typography dimensions */
+$font-size-1: 24px;
+$font-size-2: 31px;
+$font-size-3: 39px;
+$font-size-4: 49px;
+$font-size-5: 63px;
+$font-size-half: 19px;
+$lh-1: 37px;
+$lh-2: 46px;
+$lh-3: 57px;
+$lh-4: 70px;
+$lh-5: 89px;
+$lh-half: 30px;
+
+
+
+
+
