@@ -20,8 +20,8 @@ html
 body {
 
 	/* AS OPPOSED TO .body */
- 	font-size: $base-font-size;
- 	line-height: $text-line-height;
+	font-size: $font-size-half;
+	line-height: $lh-half;
 	background-color: #ffffff; // Old browsers
 	background: #ffffff; /* Old browsers */
 
@@ -30,7 +30,6 @@ body {
 
 	// background-image: radial-gradient(circle at $gradient-x $gradient-y, #ffffff, $light-blue); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	// background-attachment: fixed;
-	box-shadow: 0 2px 0px rgba(0,0,0,0.25);
 	padding-top: 1px;
 }
 
@@ -55,7 +54,8 @@ body {
 	  	grid-template-rows: auto;
 	  	grid-template-areas: 
 		    ". main .";*/
-
+		font-size: $base-font-size;
+		line-height: $text-line-height;
 		lost-center: 980px;
 
 		
