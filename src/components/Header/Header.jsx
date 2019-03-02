@@ -11,7 +11,7 @@ export class Header extends React.Component {
 				<p className={styles.headerSubtitle}>Design CV</p>
 				<div className={styles.actionsPanel}>
 					<HeaderActionIcon actionHref="mailto:tony.haddon@gmail.com" actionType="contact" actionText='Contact'/>
-					<HeaderActionIcon actionHref="/docs/cv_tonyhaddon_2018.pdf" actionType="pdf" actionText='Download PDF version'/>
+					<HeaderActionIcon actionHref="/docs/cv_tonyhaddon_2019.pdf" actionType="pdf" actionText='Download a PDF version of this CV'/>
 				</div>
 			</div>
 			

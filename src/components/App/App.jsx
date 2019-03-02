@@ -75,13 +75,13 @@ export default class App extends React.Component {
           intro: 'I made an internal move from a general design service role (see earlier role below) to a full-time concentration on the UI for the BriteBill product suite. I refined the UI kit and developed set of style rules that provides a rhythm to the UI and is easy to remember.',
           listIntro: 'Working under the head of product management, I:',
           listItems: [
-            'meet daily with my colleagues on the product team to refine stories based on requirements from the business and delivery teams, and to review designs I\'ve done to meet those requirements.',
-            'design screens for new features and applications.',
-            'maintain and extend the UI kit, which contains all the components that make up the BriteBill application suite.',
-            'partner with UI devs on implementing and polishing UI, formalising and standardising components as we go. I want to be as inclusive as possible on design decisions. I believe it helps to inspire a sense of ownership of the product’s look and feel, and it brings fresh eyes to bear on my work too.',
-            'work on PowerPoint slide decks to assist sales and marketing efforts, and try and simplify the communication around BriteBill products when the offering isn’t really as clear as it could be.',
-            'often serve as a go-between between technical and design staff, as I have a good common understanding of both fields. Example: educating the delivery design team on using Subversion VCS for updating website code and publishing it to the website.',
-            'write and perform user testing on the product, to try and discover what\'s not working in the UI.'
+            'meet daily with my colleagues on the product team to refine stories based on requirements from the business and delivery teams, and to shape solutions with design work I\'ve done to meet those requirements.',
+            'maintain and extend the BriteBill design system.',
+            'regularly workshop with the development team and architects to design and refine features.',
+            'work on PowerPoint slide decks to assist sales and marketing efforts, simplifying the communication around BriteBill products.',
+            'write and perform user testing on the product, to discover what\'s not working.',
+            'introduce new ways to work and make decisions as a team — using techniques learned from, among others, Design Sprint and Lightning Decision Jam.'
+
           ]
         }
       },
@@ -91,15 +91,15 @@ export default class App extends React.Component {
         companyName: 'BriteBill',
         jobDates: 'February ’11 - September ’16',
         contents: {
-          intro: 'This was a contract relief position at first, covering the duties of the creative director while he took an extended period of annual leave. I was unexpectedly offered the opportunity to stay on before my contract term had expired.',
+          intro: 'This was a contract relief position at first, covering the duties of the creative director while he took an extended period of annual leave. I was asked to stay on full-time before my contract term had expired.',
           listIntro: 'Working on the delivery team under the creative director, I:',
           listItems: [
             'worked with international client teams in various functions (business, IT, UXD and so on) to navigate business requirements, provide effort estimates, then delivered design work in a waterfall approach to those estimates.',
-            'planned design work into 2-week-long “design sprints”.',
+            'planned design work into 2-week-long “design sprints” (Not Jake Knapp style ones).',
             'designed web UI and bills, for paper (PDF) output as well as online, building and enforcing pattern libraries and sometimes animating interactions in detail (using e.g. Photoshop or After Effects).',
             'managed junior designers on the team, allocating client project work to meet resourcing limitations and reviewing to ensure quality on time.',
-            'ensured that our project designs were deliverable by liaising with the development team and asking lots of questions understanding how large corporations operate and how scope can creep if you don’t keep it buttoned down.',
-            'designed pitch graphics and bill concepts for prospective clients.'
+            'ensured that our designs were deliverable by liaising with our development team, communicating requirements and clarifying on effort levels in order to reduce likelihood of scope creep.',
+            'designed pitch graphics and bill designs to impress prospective clients.'
           ]
         }
       },
@@ -109,10 +109,10 @@ export default class App extends React.Component {
         companyName: 'Telefónica O2 Ireland',
         jobDates: 'October ’07 - November ’10',
         contents: {
-          intro: 'I went in initially to work on one specific contract, then took a full-time position that became available while I was there.',
-          listIntro: 'Working on the digital team:',
+          intro: 'I went in initially to work on a specific contract, then applied for a full-time position that became available while I was there.',
+          listIntro: 'Working as one of 3 developers on the digital team:',
           listItems: [
-            'I was required to develop solutions to specific business briefs, ranging in complexity from a javascript upgrade calculator to a php/MySQL-based store locator and a broadband coverage-checker integrated with Google maps.',
+            'I was required to develop solutions to specific business briefs, ranging in complexity from a JavaScript upgrade calculator to a PHP/MySQL-based store locator and a broadband coverage-checker integrated with Google maps.',
             'I maintained affiliate schemes provided by TradeDoubler and PigsBack, which tracked leads and O2 online store sales that completed after banner-clicks on third-party sites. (JavaScript/PHP)',
             'On an ongoing basis, I had to find creative solutions to circumvent numerous technical obstacles which presented situations where server-side scripting solutions were not available, for example using jQuery for screen-scraping, and DOM manipulation.'
           ]
@@ -120,11 +120,11 @@ export default class App extends React.Component {
       },
       {
         contentType: 'ROLE',
-        title: 'Self-employed',
+        title: 'Self-Employed',
         companyName: false,
         jobDates: 'Nov ’03 - September ’07',
         contents: {
-          intro: 'For a little over 3 years, I operated as a sole trader, working on numerous projects of various sizes. My involvement was total — from planning and communications with the clients through to delivery. The job type varied; sometimes it was graphic design only, sometimes website design and build, sometimes running brand values workshops, and sometimes training a client’s staff in web standards-compliance (which was big at the time). Of course, being self-employed meant having to manage my own finances and keep accounts too.'
+          intro: 'For a little over 3 years, I operated as a sole trader, working on numerous projects of various sizes. Naturally this meant I was involved in every aspect of running a business, from planning and communications with clients through to delivery. The job type varied; sometimes it was graphic design only, sometimes website design and build, sometimes training a client’s staff in web standards-compliance. Of course, being self-employed meant having to manage my own finances and keep accounts too.'
         }
       },
       {
@@ -142,7 +142,7 @@ export default class App extends React.Component {
         companyName: 'Interactive Services',
         jobDates: 'September ’98 - June ’00',
         contents: {
-          intro: 'An e-learning company delivering online training services mainly to the US market. I ran a team of designers generating 8-bit graphics, supervising quality and ensuring on-time delivery.'
+          intro: 'An e-learning company delivering online training services mainly to the US market. I ran a team of designers generating 8-bit graphics, supervising quality and ensuring on-time delivery. I was promoted to the senior role after 6 months as a junior.'
         }
       }
     ]

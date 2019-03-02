@@ -77,7 +77,7 @@ export default class Body extends React.Component {
           <Header fadeIt={ this.state.topHeadingFadeState }/>
           <SiteHeading fadeIt={ this.state.mainHeadingFadeState }/>
       	   <div className={ styles.panelsContainer }>
-	           <Panel>I’m a designer with 20 years experience designing in digital and printed media. I’ve a solid technical background too, so I work well with developers. I’d like to work and learn with a team on a consumer-facing app where reliable customer data drives design improvements.</Panel>
+	           <Panel>I’m a designer with 20 years experience designing in digital and printed media. I’ve a solid technical background too, so I work really well with developers. I’d like to work and learn with a team on applications where reliable customer data drives design improvements.</Panel>
 	           <Panel panelTitle={'Skills'} contentArray={ this.skillsContentsArray } panelIndex={1}/>
 
 	           <Panel panelTitle={'Career History'} contentArray={ this.rolesArray } panelIndex={2}/>
